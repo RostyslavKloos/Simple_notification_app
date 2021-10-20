@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#02AAB0"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        android:id="@+id/ivFabsBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/large_100"
+        android:src="@drawable/ic_fabs_rect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_100"
+        android:background="@drawable/ic_fab_circle"
+        android:gravity="center"
+        android:paddingBottom="@dimen/small_100"
+        android:text="@string/minus"
+        android:textColor="#02AAB0"
+        android:textSize="@dimen/font_largest"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFabsBackground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivFabsBackground" />
+
+    <TextView
+        android:id="@+id/tvAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/large_100"
+        android:background="@drawable/ic_fab_circle"
+        android:gravity="center"
+        android:paddingBottom="@dimen/small_100"
+        android:text="@string/plus"
+        android:textColor="#02AAB0"
+        android:textSize="@dimen/font_largest"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFabsBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivFabsBackground" />
+
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_number"
+        app:layout_constraintBottom_toBottomOf="@+id/ivFabsBackground"
+        app:layout_constraintTop_toTopOf="@+id/ivFabsBackground"
+        app:layout_constraintStart_toStartOf="@+id/ivFabsBackground"
+        app:layout_constraintEnd_toEndOf="@+id/ivFabsBackground"
+        tools:text="0"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

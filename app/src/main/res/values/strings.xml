@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pecode_notification_task</string>
+    <string name="notification_description">Notification</string>
+    <string name="notification_title">You create a notification</string>
+    <string name="notification_not_supported">Notification not supported</string>
+    <string name="notification_create">Create new notification</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+</resources>
